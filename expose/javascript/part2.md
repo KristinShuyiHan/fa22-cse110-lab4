@@ -55,5 +55,12 @@ F. True The conversion rule of boolean is values that are intuitively â€œemptyâ€
 
 15. The difference of between == and === is == is a regular equality check, which means values of different types are converted to numbers by this equality operator. However, === is strict equality operator. It checks the equality without type conversion. An example of how the two operators work differently is (0 == false) is true, but ( 0 === false ) is false 
 
-17. The code will output the array: [2, 4, 6].  As the higher order function, modifyArray function has two argument, an array and a callback function. Firstly it creates a const array called newArr. It loops through the first argument array. For each iteration, it called the callback function using the i th item of the array, and the pushes the result to newArr. The doSomething function is passed as the callback to mdofifyArrayIt. It takes array[I] as argument and returns that number multiplied by 2. In the case, the modifyArray takes[1,2,3] as the array input, thus the for loop makes 1, 2, 3 as the input of the callback function respectively. The results which are 2,4,5, are pushed into newArr in turn. The modifyArray then returns newArr, which is [2, 4, 6].
+16.  is in part2-question16.js  
+17. The code will output the array: [2, 4, 6].  As the higher order function, modifyArray function has two argument, an array and a callback function. Firstly it creates a const array called newArr. It loops through the first argument array. For each iteration, it called the callback function using the i th item of the array, and the pushes the result to newArr. The doSomething function is passed as the callback to mdofifyArrayIt. It takes array[I] as argument and returns that number multiplied by 2. In the case, the modifyArray takes[1,2,3] as the array input, thus the for loop makes 1, 2, 3 as the input of the callback function respectively. The results which are 2,4,5, are pushed into newArr in turn. The modifyArray then returns newArr, which is [2, 4, 6]  
+18.  is in part2-question18.js  
+19.  
+1
+4
+3
+2
 
