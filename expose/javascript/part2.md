@@ -4,7 +4,7 @@
 
 3. At line 14, the statement prints the discounted price of the last item in the prices array. The for loop runs each of the three prices data in the prices array and calculates its discountedPrice. The finalPrice is assigned a new value whenever the loop runs for one time. However, since console.log()  is outside the for loop and final price is accessible outside of the for loop (assigned by var), it prints finalPrice for the last data in the array, which is (( [2]*(1-0.5) )*100)/100 = 150.
 
-4 the discountPrices function will of return an array: [50, 100, 150]. This is because the for loop runs each item inside the prices array argument, and calculates the final price of each item, and final price of each item is then pushed into discounted array. Because discounted array is initialized with var, it has a function scope and can be accessble anywhere inside the function it’s defined. For the first item (100),  discounted price is 100 * (1 - 0.5) = 50. For the second  (200),dp will be 200 * (1 - 0.5) = 100. For the third  (300), dp is 300 * (1 - 0.5) = 150. The values of the discounted are kept after the loop runs, making the function return [50, 100, 150]. 
+4. the discountPrices function will of return an array: [50, 100, 150]. This is because the for loop runs each item inside the prices array argument, and calculates the final price of each item, and final price of each item is then pushed into discounted array. Because discounted array is initialized with var, it has a function scope and can be accessble anywhere inside the function it’s defined. For the first item (100),  discounted price is 100 * (1 - 0.5) = 50. For the second  (200),dp will be 200 * (1 - 0.5) = 100. For the third  (300), dp is 300 * (1 - 0.5) = 150. The values of the discounted are kept after the loop runs, making the function return [50, 100, 150]. 
 
 5. There will be an ReferenceError saying  i is not defined. This is because let keyword provides the variable with block scope, making it can only be accessed within the block it is defined in. Since i is defined in the for loop, it cannot be accessible outside the for loop block, making the consoled statement locates after the for loop has undefined argument. 
 
@@ -21,27 +21,27 @@
 11. The discountPrices function will of return an array: [50, 100, 150]. This is because the for loop runs each item inside the prices array argument, and calculates the final price of each item, and final price of each item is then pushed into discounted array. Because discounted array and length are initialized with const and resides at the top of the function, length will always be three, and discounted cannot be reassigned to a new value. However, the contents of an array declared with const can be modified, such as by adding or removing elements. The 2 variables also have both a block scope while also a function scope and can be accessible anywhere inside the function it’s defined. For the first item (100),  discounted price is 100 * (1 - 0.5) = 50. For the second  (200),dp will be 200 * (1 - 0.5) = 100. For the third  (300), dp is 300 * (1 - 0.5) = 150. Every time the loop runs there is a discountedPrice variable being initialized and  the const prevents it to be accidentally changed or modified later. The discountedPrice are then being pushed into discounted.  Values in array are kept after the loop runs, making the function return [50, 100, 150]. 
 
 12. 
-A. student.name
+A. student.name  
 
-B. student['Grad Year']
+B. student['Grad Year']  
 
-C. student.greeting()
+C. student.greeting()  
 
-D. student['Favorite Teacher'].name
+D. student['Favorite Teacher'].name  
 
-E. student.courseLoad[0]
+E. student.courseLoad[0]  
 
 
 
 13.
-A. ’32’ The plus operator when used with a string and a number, concatenates the two values together into a new string. ‘3’ is a string, resulting in the string '32'.
-B. 1  subtraction operator only works with numbers, so JS turn the string '3' into the number 3 . In other words, subtraction with non number works by converting string to a number. In this case, 3, then is subtracted by 2 to get one. 
-C.3 In JS, numeric conversion for null is turning it to 0. Therefore, in this numeric operation,  the result is 3 + 0, which equals 3.
-D. ‘3null’ Given that “3” is a string, null value is converted to a string 'null' under string conversion. The string operation then concatenate string '3' and ‘null’ to give '3null'.
-E. 4  This operation involves number and a boolean, so we do a math operation which requires numeric conversion. True is converted to 1 in javascript.  3+1 = 4
-F. 0 This operation involves null and a boolean, so we do a math operation which requires numeric conversion. False is converted to 0 in javascript, and null is converted to 0. Therefore, the result is 0 + 0, which equals 0.
-G.  '3undefined' When the + operator is used with a string and undefined,  JS turns undefined into a string, and concatenate the two values together, resulting in the string '3undefined'.
-H.  NaN    minus operator only works with numbers, so JavaScript tries to convert undefined into a number. However, undefined cannot be converted a number and can only turned into “NaN”.  The subtraction operation results in NaN (Not a Number).
+A. ’32’ The plus operator when used with a string and a number, concatenates the two values together into a new string. ‘3’ is a string, resulting in the string '32'.  
+B. 1  subtraction operator only works with numbers, so JS turn the string '3' into the number 3 . In other words, subtraction with non number works by converting string to a number. In this case, 3, then is subtracted by 2 to get one.   
+C.3 In JS, numeric conversion for null is turning it to 0. Therefore, in this numeric operation,  the result is 3 + 0, which equals 3.  
+D. ‘3null’ Given that “3” is a string, null value is converted to a string 'null' under string conversion. The string operation then concatenate string '3' and ‘null’ to give '3null'.  
+E. 4  This operation involves number and a boolean, so we do a math operation which requires numeric conversion. True is converted to 1 in javascript.  3+1 = 4  
+F. 0 This operation involves null and a boolean, so we do a math operation which requires numeric conversion. False is converted to 0 in javascript, and null is converted to 0. Therefore, the result is 0 + 0, which equals 0.  
+G.  '3undefined' When the + operator is used with a string and undefined,  JS turns undefined into a string, and concatenate the two values together, resulting in the string '3undefined'.  
+H.  NaN    minus operator only works with numbers, so JavaScript tries to convert undefined into a number. However, undefined cannot be converted a number and can only turned into “NaN”.  The subtraction operation results in NaN (Not a Number).  
 
 
 
