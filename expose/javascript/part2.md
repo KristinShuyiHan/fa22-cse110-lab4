@@ -34,13 +34,13 @@ E. student.courseLoad[0]
 
 
 13.
-A. ’32’ The plus operator when used with a string and a number, concatenates the two values together into a new string. ‘3’ is a string, resulting in the string '32'.  
-B. 1  subtraction operator only works with numbers, so JS turn the string '3' into the number 3 . In other words, subtraction with non number works by converting string to a number. In this case, 3, then is subtracted by 2 to get one.   
-C.3 In JS, numeric conversion for null is turning it to 0. Therefore, in this numeric operation,  the result is 3 + 0, which equals 3.  
+A.  ’32’ The plus operator when used with a string and a number, concatenates the two values together into a new string. ‘3’ is a string, resulting in the string '32'.  
+B. 1   subtraction operator only works with numbers, so JS turn the string '3' into the number 3 . In other words, subtraction with non number works by converting string to a number. In this case, 3, then is subtracted by 2 to get one.   
+C.3  In JS, numeric conversion for null is turning it to 0. Therefore, in this numeric operation,  the result is 3 + 0, which equals 3.  
 D. ‘3null’ Given that “3” is a string, null value is converted to a string 'null' under string conversion. The string operation then concatenate string '3' and ‘null’ to give '3null'.  
-E. 4  This operation involves number and a boolean, so we do a math operation which requires numeric conversion. True is converted to 1 in javascript.  3+1 = 4  
-F. 0 This operation involves null and a boolean, so we do a math operation which requires numeric conversion. False is converted to 0 in javascript, and null is converted to 0. Therefore, the result is 0 + 0, which equals 0.  
-G.  '3undefined' When the + operator is used with a string and undefined,  JS turns undefined into a string, and concatenate the two values together, resulting in the string '3undefined'.  
+E. 4   This operation involves number and a boolean, so we do a math operation which requires numeric conversion. True is converted to 1 in javascript.  3+1 = 4  
+F. 0  This operation involves null and a boolean, so we do a math operation which requires numeric conversion. False is converted to 0 in javascript, and null is converted to 0. Therefore, the result is 0 + 0, which equals 0.  
+G. '3undefined'   When the + operator is used with a string and undefined,  JS turns undefined into a string, and concatenate the two values together, resulting in the string '3undefined'.  
 H.  NaN    minus operator only works with numbers, so JavaScript tries to convert undefined into a number. However, undefined cannot be converted a number and can only turned into “NaN”.  The subtraction operation results in NaN (Not a Number).  
 
 
