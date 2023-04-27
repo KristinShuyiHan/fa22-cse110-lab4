@@ -46,11 +46,11 @@ H.  NaN    minus operator only works with numbers, so JavaScript tries to conver
 
 
 14.
-A. True  When comparing values of different types, JavaScript converts the values to numbers. String '2' is converted to the number 2 and then compared with the number 1. Obviously 2 is larger than 1
-B. False JavaScript uses the so-called “dictionary” or “lexicographical” order to compare string. It works by comparing the first character of both strings, and if the first character from the first string is greater (or less) than the other string’s, then the first string is greater (or less) than the second. In this case, first char "2" is greater than the first char “1”, making “2” greater than “12”, thus false
-C. True  When comparing values of different types, JavaScript converts the values to numbers. It converts the string '2' to the number 2 and then compare it to the number 2. Thus true.
-D. False A strict equality operator === checks the equality without type conversion. Because value on the two sides are num and string respectively, JS immediately returns false without an attempt to convert them.
-E. False When comparing values of different types using regular quality check, JavaScript converts the values to numbers. It convert true to 1 and compares it to the number 2. Thus false.
-F. True The conversion rule of boolean is values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false, and Other values become true. In this case, Boolean(2) is converted to boolean true, true equals true 
+A. True  When comparing values of different types, JavaScript converts the values to numbers. String '2' is converted to the number 2 and then compared with the number 1. Obviously 2 is larger than 1  
+B. False JavaScript uses the so-called “dictionary” or “lexicographical” order to compare string. It works by comparing the first character of both strings, and if the first character from the first string is greater (or less) than the other string’s, then the first string is greater (or less) than the second. In this case, first char "2" is greater than the first char “1”, making “2” greater than “12”, thus false  
+C. True  When comparing values of different types, JavaScript converts the values to numbers. It converts the string '2' to the number 2 and then compare it to the number 2. Thus true.  
+D. False A strict equality operator === checks the equality without type conversion. Because value on the two sides are num and string respectively, JS immediately returns false without an attempt to convert them.  
+E. False When comparing values of different types using regular quality check, JavaScript converts the values to numbers. It convert true to 1 and compares it to the number 2. Thus false.  
+F. True The conversion rule of boolean is values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false, and Other values become true. In this case, Boolean(2) is converted to boolean true, true equals true   
 
 15. The difference of between == and === is == is a regular equality check, which means values of different types are converted to numbers by this equality operator. However, === is strict equality operator. It checks the equality without type conversion. An example of how the two operators work differently is (0 == false) is true, but ( 0 === false ) is false 
